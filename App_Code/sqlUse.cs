@@ -14,14 +14,15 @@ namespace MiniBli
     {
         //protected string table { get; set; }
        // protected string key { get; set; }
-       // protected string what { get; set; }
-        public sqlUse()
+        protected string setting { get; set; }
+        public sqlUse(string setting = "DefaultConnection")
         {
+            this.setting = setting;
         }
         //向table表中，查询字段key的值为what的行，查询的结果存储于datatable对象中返回
         public DataTable doSearch(string table, string key, string what)
         {
-            string setting = "DefaultConnection";
+          //  string setting = "DefaultConnection";
             var connString = System.Web.Configuration.WebConfigurationManager.ConnectionStrings[setting];
             SqlConnection conn = new SqlConnection(connString.ConnectionString);
             if (conn.State == ConnectionState.Closed)
