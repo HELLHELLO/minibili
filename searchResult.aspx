@@ -17,7 +17,7 @@
         </tr>
         <tr>
             <td style="height: 86px">
-                <asp:LinkButton ID="Label12" runat="server"></asp:LinkButton>
+                <asp:Label ID="Label12" runat="server"></asp:Label>
             </td>
         </tr>
        <tr>
@@ -31,7 +31,7 @@
         </tr>
         <tr>
             <td style="height: 86px">
-                <asp:LinkButton ID="Label22" runat="server"></asp:LinkButton>
+                <asp:Label ID="Label22" runat="server"></asp:Label>
             </td>
         </tr><tr>
             <td style="height: 86px; width: 193px;" rowspan="2">
@@ -44,7 +44,7 @@
         </tr>
         <tr>
             <td style="height: 86px; clip: rect(90000px, auto, auto, auto);">
-                <asp:LinkButton ID="Label32" runat="server"></asp:LinkButton>
+                <asp:Label ID="Label32" runat="server"></asp:Label>
             </td>
         </tr><tr>
             <td style="height: 86px; width: 193px;" rowspan="2">
@@ -57,7 +57,7 @@
         </tr>
         <tr>
             <td style="height: 86px">
-                <asp:LinkButton ID="Label42" runat="server"></asp:LinkButton>
+                <asp:Label ID="Label42" runat="server"></asp:Label>
             </td>
         </tr><tr>
             <td style="height: 86px; width: 193px;" rowspan="2">
@@ -71,7 +71,7 @@
         </tr>
         <tr>
             <td style="height: 86px">
-                <asp:LinkButton ID="Label52" runat="server"></asp:LinkButton>
+                <asp:Label ID="Label52" runat="server"></asp:Label>
             </td>
         </tr>
     </table>

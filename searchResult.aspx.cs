@@ -33,7 +33,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image1.ImageUrl = Result.videos[i].cover;
             Label11.Text = Result.videos[i].title;
-            Label12.Text = Result.videos[i].info;
+            Label12.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -48,7 +48,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image2.ImageUrl = Result.videos[i].cover;
             Label21.Text = Result.videos[i].title;
-            Label22.Text = Result.videos[i].info;
+            Label22.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -63,7 +63,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image3.ImageUrl = Result.videos[i].cover;
             Label31.Text = Result.videos[i].title;
-            Label32.Text = Result.videos[i].info;
+            Label32.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -78,7 +78,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image4.ImageUrl = Result.videos[i].cover;
             Label41.Text = Result.videos[i].title;
-            Label42.Text = Result.videos[i].info;
+            Label42.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -93,7 +93,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image5.ImageUrl = Result.videos[i].cover;
             Label51.Text = Result.videos[i].title;
-            Label52.Text = Result.videos[i].info;
+            Label52.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -118,7 +118,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image1.ImageUrl = Result.videos[i].cover;
             Label11.Text = Result.videos[i].title;
-            Label12.Text = Result.videos[i].info;
+            Label12.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -133,7 +133,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image2.ImageUrl = Result.videos[i].cover;
             Label21.Text = Result.videos[i].title;
-            Label22.Text = Result.videos[i].info;
+            Label22.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -148,7 +148,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image3.ImageUrl = Result.videos[i].cover;
             Label31.Text = Result.videos[i].title;
-            Label32.Text = Result.videos[i].info;
+            Label32.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -163,7 +163,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image4.ImageUrl = Result.videos[i].cover;
             Label41.Text = Result.videos[i].title;
-            Label42.Text = Result.videos[i].info;
+            Label42.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -178,7 +178,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image5.ImageUrl = Result.videos[i].cover;
             Label51.Text = Result.videos[i].title;
-            Label52.Text = Result.videos[i].info;
+            Label52.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -203,7 +203,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image1.ImageUrl = Result.videos[i].cover;
             Label11.Text = Result.videos[i].title;
-            Label12.Text = Result.videos[i].info;
+            Label12.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -218,7 +218,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image2.ImageUrl = Result.videos[i].cover;
             Label21.Text = Result.videos[i].title;
-            Label22.Text = Result.videos[i].info;
+            Label22.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -233,7 +233,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image3.ImageUrl = Result.videos[i].cover;
             Label31.Text = Result.videos[i].title;
-            Label32.Text = Result.videos[i].info;
+            Label32.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -248,7 +248,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image4.ImageUrl = Result.videos[i].cover;
             Label41.Text = Result.videos[i].title;
-            Label42.Text = Result.videos[i].info;
+            Label42.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -263,7 +263,7 @@ public partial class searchResult : System.Web.UI.Page
         {
             Image5.ImageUrl = Result.videos[i].cover;
             Label51.Text = Result.videos[i].title;
-            Label52.Text = Result.videos[i].info;
+            Label52.Text = "上传者："+Result.videos[i].upUser+"\r\n上传时间："+Result.videos[i].upDate+"\r\n简介："+Result.videos[i].info;
         }
         else
         {
@@ -331,4 +331,5 @@ public partial class searchResult : System.Web.UI.Page
             return;
         }
     }
+
 }
