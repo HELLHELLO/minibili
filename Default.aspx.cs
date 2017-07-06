@@ -16,8 +16,12 @@ public partial class _Default : Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        MiniBli.sqlUse search = new MiniBli.sqlUse();
-        DataTable dt = search.doSearch("video", "Type", "test");
-        TextBox1.Text = dt.Rows[0]["location"].ToString();
+        //MiniBli.sqlUse search = new MiniBli.sqlUse();
+        string useKey = key.SelectedValue;
+        string useSearch = sear.Text;
+       // MiniBli.videoList searchResult = new MiniBli.videoList(search.doSearch("video", useKey, useSearch));
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
     }
+
+
 }
