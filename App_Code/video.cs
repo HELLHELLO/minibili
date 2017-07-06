@@ -37,9 +37,13 @@ namespace MiniBli
     {
         public List<video> videos = new List<video>();
         public videoList() { }
-        public videoList(DataTable dt)
+        public videoList(DataTable dt, int n = 0)
         {
             int count = dt.Rows.Count;
+            if (n != 0)
+            {
+                count = n > count ? count : n;
+            }
             for (int i = 0 ; i < count ; i++)
             {
                 video tempVideo = new video(dt.Rows[i]["id"].ToString(), dt.Rows[i]["title"].ToString(), dt.Rows[i]["type"].ToString(), dt.Rows[i]["upUser"].ToString(), dt.Rows[i]["upDate"].ToString(), dt.Rows[i]["info"].ToString(), dt.Rows[i]["location"].ToString(), dt.Rows[i]["cover"].ToString());
