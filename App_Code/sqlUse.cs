@@ -19,10 +19,10 @@ namespace MiniBli
         {
             this.setting = setting;
         }
-        //向table表中，查询字段key的值为what的行，查询的结果存储于datatable对象中返回
-        public DataTable doSearch(string table, string key, string what)
+
+        public DataTable doSearch(string sql)
         {
-          //  string setting = "DefaultConnection";
+            //  string setting = "DefaultConnection";
             var connString = System.Web.Configuration.WebConfigurationManager.ConnectionStrings[setting];
             SqlConnection conn = new SqlConnection(connString.ConnectionString);
             if (conn.State == ConnectionState.Closed)
@@ -32,7 +32,7 @@ namespace MiniBli
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = conn;
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = $"select * from {table} where {key}='{what}'";
+            cmd.CommandText = sql;
             DataTable dt = new DataTable();
             SqlDataAdapter adapter = new SqlDataAdapter();
             adapter.SelectCommand = cmd;

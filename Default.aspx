@@ -1,23 +1,21 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <div style="height: 750px; width: 905px">
+    
        
         <table class="nav-justified">
             <tr>
                 <td class="text-right">
                     <asp:TextBox ID="sear" runat="server" Width="424px"></asp:TextBox>
-                    <asp:DropDownList ID="key" runat="server">
+                    <asp:DropDownList ID="key" runat="server" OnSelectedIndexChanged="key_SelectedIndexChanged">
                         <asp:ListItem Value="Title">标题</asp:ListItem>
                         <asp:ListItem Value="upUser">上传者</asp:ListItem>
-                        <asp:ListItem Value="upDate">上传时间</asp:ListItem>
                         <asp:ListItem Value="Id">ID号</asp:ListItem>
                     </asp:DropDownList>
                     <asp:Button ID="Button1" runat="server" Text="搜索" OnClick="Button1_Click" />
                 </td>
             </tr>
         </table>
-       
         <table style="width:905px;">
             <tr>
                 <td colspan="2" style="height: 22px">
@@ -29,13 +27,13 @@
             </tr>
             <tr>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="gxim1" runat="server" />
+                    <asp:Image ID="gxim1" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 226px">
                     <asp:LinkButton ID="gxlin1" runat="server" OnClick="gxlin1_Click"></asp:LinkButton>
                 </td>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="gxim2" runat="server" />
+                    <asp:Image ID="gxim2" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 227px">
                     <asp:LinkButton ID="gxlin2" runat="server" OnClick="gxlin2_Click"></asp:LinkButton>
@@ -59,13 +57,13 @@
             </tr>
             <tr>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="ggim1" runat="server" Width="16px" />
+                    <asp:Image ID="ggim1" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 226px; height: 20px">
                     <asp:LinkButton ID="gglin1" runat="server" OnClick="gglin1_Click"></asp:LinkButton>
                 </td>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="ggim2" runat="server" />
+                    <asp:Image ID="ggim2" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 227px; height: 20px">
                     <asp:LinkButton ID="gglin2" runat="server" OnClick="gglin2_Click"></asp:LinkButton>
@@ -89,13 +87,13 @@
             </tr>
             <tr>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="gcim1" runat="server" style="margin-left: 0px" />
+                    <asp:Image ID="gcim1" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 226px">
                     <asp:LinkButton ID="gclin1" runat="server" OnClick="gclin1_Click"></asp:LinkButton>
                 </td>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="gcim2" runat="server" />
+                    <asp:Image ID="gcim2" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 227px">
                     <asp:LinkButton ID="gclin2" runat="server" OnClick="gclin2_Click"></asp:LinkButton>
@@ -119,13 +117,13 @@
             </tr>
             <tr>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="jlim1" runat="server" />
+                    <asp:Image ID="jlim1" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 226px">
                     <asp:LinkButton ID="jllin1" runat="server" OnClick="jllin1_Click"></asp:LinkButton>
                 </td>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="jlim2" runat="server" />
+                    <asp:Image ID="jlim2" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 227px">
                     <asp:LinkButton ID="jllin2" runat="server" OnClick="jllin2_Click"></asp:LinkButton>
@@ -149,13 +147,13 @@
             </tr>
             <tr>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="jsim1" runat="server" />
+                    <asp:Image ID="jsim1" runat="server" Width="200px" Height="200px"/>
                 </td>
                 <td style="width: 226px">
                     <asp:LinkButton ID="jslin1" runat="server" OnClick="jslin1_Click"></asp:LinkButton>
                 </td>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="jsim2" runat="server" />
+                    <asp:Image ID="jsim2" runat="server" Width="200px" Height="200px"/>
                 </td>
                 <td style="width: 227px">
                     <asp:LinkButton ID="jslin2" runat="server" OnClick="jslin2_Click"></asp:LinkButton>
@@ -179,13 +177,13 @@
             </tr>
             <tr>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="khim1" runat="server" />
+                    <asp:Image ID="khim1" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 226px; height: 22px;">
                     <asp:LinkButton ID="khlin1" runat="server" OnClick="khlin1_Click"></asp:LinkButton>
                 </td>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="khim2" runat="server" />
+                    <asp:Image ID="khim2" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 227px; height: 22px;">
                     <asp:LinkButton ID="khlin2" runat="server" OnClick="khlin2_Click"></asp:LinkButton>
@@ -209,13 +207,13 @@
             </tr>
             <tr>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="xcim1" runat="server" />
+                    <asp:Image ID="xcim1" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 226px">
                     <asp:LinkButton ID="xclin1" runat="server" OnClick="xclin1_Click"></asp:LinkButton>
                 </td>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="xcim2" runat="server" />
+                    <asp:Image ID="xcim2" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 227px">
                     <asp:LinkButton ID="xclin2" runat="server" OnClick="xclin2_Click"></asp:LinkButton>
@@ -239,13 +237,13 @@
             </tr>
             <tr>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="yxim1" runat="server" />
+                    <asp:Image ID="yxim1" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 226px">
                     <asp:LinkButton ID="yxlin1" runat="server" OnClick="yxlin1_Click"></asp:LinkButton>
                 </td>
                 <td rowspan="2" style="width: 226px">
-                    <asp:Image ID="yxim2" runat="server" />
+                    <asp:Image ID="yxim2" runat="server" Width="200px" Height="150px"/>
                 </td>
                 <td style="width: 227px">
                     <asp:LinkButton ID="yxlin2" runat="server" OnClick="yxlin2_Click"></asp:LinkButton>
@@ -261,7 +259,7 @@
             </tr>
         </table>
        
-    </div>
+    
    
 </asp:Content>
 

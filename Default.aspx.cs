@@ -20,14 +20,14 @@ public partial class _Default : Page
     protected void Page_Load(object sender, EventArgs e)
     {
         MiniBli.sqlUse search = new MiniBli.sqlUse();
-        gxVideos = new MiniBli.videoList(search.doSearch("video", "Type", "gx"), 2);
-        ggVideos = new MiniBli.videoList(search.doSearch("video", "Type", "gg"), 2);
-        gcVideos = new MiniBli.videoList(search.doSearch("video", "Type", "gc"), 2);
-        jlVideos = new MiniBli.videoList(search.doSearch("video", "Type", "jl"), 2);
-        jsVideos = new MiniBli.videoList(search.doSearch("video", "Type", "js"), 2);
-        khVideos = new MiniBli.videoList(search.doSearch("video", "Type", "kh"), 2);
-        xcVideos = new MiniBli.videoList(search.doSearch("video", "Type", "xc"), 2);
-        yxVideos = new MiniBli.videoList(search.doSearch("video", "Type", "yx"), 2);
+        gxVideos = new MiniBli.videoList(search.doSearch("select * from video where Type = 'gx' order by theUpDate DESC"), 2);
+        ggVideos = new MiniBli.videoList(search.doSearch("select * from video where Type = 'gg'order by theUpDate DESC"), 2);
+        gcVideos = new MiniBli.videoList(search.doSearch("select * from video where Type = 'gc' order by theUpDate DESC"), 2);
+        jlVideos = new MiniBli.videoList(search.doSearch("select * from video where Type = 'jl' order by theUpDate DESC"), 2);
+        jsVideos = new MiniBli.videoList(search.doSearch("select * from video where Type = 'js' order by theUpDate DESC"), 2);
+        khVideos = new MiniBli.videoList(search.doSearch("select * from video where Type = 'kh' order by theUpDate DESC"), 2);
+        xcVideos = new MiniBli.videoList(search.doSearch("select * from video where Type = 'xc' order by theUpDate DESC"), 2);
+        yxVideos = new MiniBli.videoList(search.doSearch("select * from video where Type = 'yx' order by theUpDate DESC"), 2);
         int i = 0;
         i = gxVideos.videos.Count;
         if (i == 2)
@@ -519,5 +519,9 @@ public partial class _Default : Page
         {
             return;
         }
+    }
+
+    protected void key_SelectedIndexChanged(object sender, EventArgs e)
+    {
     }
 }

@@ -46,7 +46,7 @@ namespace MiniBli
             }
             for (int i = 0 ; i < count ; i++)
             {
-                video tempVideo = new video(dt.Rows[i]["id"].ToString(), dt.Rows[i]["title"].ToString(), dt.Rows[i]["type"].ToString(), dt.Rows[i]["upUser"].ToString(), dt.Rows[i]["upDate"].ToString(), dt.Rows[i]["info"].ToString(), dt.Rows[i]["location"].ToString(), dt.Rows[i]["cover"].ToString());
+                video tempVideo = new video(dt.Rows[i]["id"].ToString(), dt.Rows[i]["title"].ToString(), dt.Rows[i]["type"].ToString(), dt.Rows[i]["upUser"].ToString(), dt.Rows[i]["theUpDate"].ToString(), dt.Rows[i]["info"].ToString(), dt.Rows[i]["location"].ToString(), dt.Rows[i]["cover"].ToString());
                 videos.Add(tempVideo);
             }
         }

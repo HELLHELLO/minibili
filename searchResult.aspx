@@ -1,7 +1,19 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" Title="result Page" AutoEventWireup="true" CodeFile="searchResult.aspx.cs" Inherits="searchResult" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
- 
+        <table class="nav-justified">
+            <tr>
+                <td class="text-right">
+                    <asp:TextBox ID="sear" runat="server" Width="424px"></asp:TextBox>
+                    <asp:DropDownList ID="key" runat="server">
+                        <asp:ListItem Value="Title">标题</asp:ListItem>
+                        <asp:ListItem Value="upUser">上传者</asp:ListItem>
+                        <asp:ListItem Value="Id">ID号</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:Button ID="Button1" runat="server" Text="搜索" OnClick="Button1_Click" />
+                </td>
+            </tr>
+        </table>
     <p></p>
     <p></p>
     <table style="width: 100%; height: 532px;">
