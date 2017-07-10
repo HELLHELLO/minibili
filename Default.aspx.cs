@@ -262,15 +262,6 @@ public partial class _Default : Page
         }
     }
 
-    protected void Button1_Click(object sender, EventArgs e)
-    {
-        //MiniBli.sqlUse search = new MiniBli.sqlUse();
-        string useKey = key.SelectedValue;
-        string useSearch = sear.Text;
-       // MiniBli.videoList searchResult = new MiniBli.videoList(search.doSearch("video", useKey, useSearch));
-        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
-    }
-
 
 
     protected void gx_Click(object sender, EventArgs e)
@@ -523,5 +514,69 @@ public partial class _Default : Page
 
     protected void key_SelectedIndexChanged(object sender, EventArgs e)
     {
+    }
+
+    protected void LinkButton1_Click(object sender, EventArgs e)
+    {
+        string useKey = "Type";
+        string useSearch = "gx";
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
+    }
+
+    protected void LinkButton2_Click(object sender, EventArgs e)
+    {
+        string useKey = "Type";
+        string useSearch = "gg";
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
+    }
+
+    protected void LinkButton3_Click(object sender, EventArgs e)
+    {
+        string useKey = "Type";
+        string useSearch = "gc";
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
+    }
+
+    protected void LinkButton4_Click(object sender, EventArgs e)
+    {
+        string useKey = "Type";
+        string useSearch = "jl";
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
+    }
+
+    protected void LinkButton5_Click(object sender, EventArgs e)
+    {
+        string useKey = "Type";
+        string useSearch = "js";
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
+    }
+
+    protected void LinkButton6_Click(object sender, EventArgs e)
+    {
+        string useKey = "Type";
+        string useSearch = "kh";
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
+    }
+
+    protected void LinkButton7_Click(object sender, EventArgs e)
+    {
+        string useKey = "Type";
+        string useSearch = "xc";
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
+    }
+
+    protected void LinkButton8_Click(object sender, EventArgs e)
+    {
+        string useKey = "Type";
+        string useSearch = "yx";
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
+    }
+
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        string useKey = key.SelectedValue;
+        string useSearch = sear.Text;
+        Response.Redirect($"/searchResult.aspx?useKey={useKey}&useSearch={useSearch}");
     }
 }
